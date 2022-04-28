@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="module01-advice-types" />
+        <module name="module02-advice-with-annotations" />
+        <module name="module04-pointcut-types" />
+        <module name="module03-cglib-jdk" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

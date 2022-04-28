@@ -1,0 +1,29 @@
+server:
+  port: 8080
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8083/eureka
+
+
+# Gateway try to perceive registered services in eureka server
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: customersService
+          uri: lb://CUSTOMER-SERVICE
+          predicates:
+            - Path=/customers/**
+
+        - id: addressesService
+          uri: lb://ADDRESS-SERVICE
+          predicates:
+            - Path=/addresses/**
+
+        - id: webIUService
+          uri: lb://WEB-UI-SERVICE
+          predicates:
+            - Path=/, /home, /index, /**.js

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div th:fragment="customers">
+
+    <div class="row">
+        <div class="col-md-12 mb-4">
+            <h2>Customers</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 mb-4">
+            <button id="fetchCustomersButton" class="btn btn-primary">Fetch Customer</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 mb-4">
+            <span id="fetchCustomersInfo"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 mb-4">
+            <table class="table" id="customers">
+                <thead>
+                <tr>
+                    <th scope="col">Customer Name</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

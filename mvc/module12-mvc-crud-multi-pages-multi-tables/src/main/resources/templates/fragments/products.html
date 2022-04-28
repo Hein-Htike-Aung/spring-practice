@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<div th:fragment="categories">
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-12">
+
+                <div class="row">
+                    <div class="col">
+                        <a th:href="@{/products/add}" href="#" class="btn btn-primary mb-4">Add New</a>
+                    </div>
+
+                    <div class="col">
+                        <form action="#" th:action="@{/products}" class="ml-auto">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" name="keyword" class="form-control mr-2" placeholder="Enter Keyword">
+                                </div>
+                                <div class="col">
+                                    <button type="submit" class="btn btn-outline-success mr-2">Search</button>
+                                    <button type="submit" onclick="clearFilter()" class="btn btn-success">Search All</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div th:if="${products.isEmpty()}">
+                    <div role="alert" class="alert alert-warning">
+                        No Product Defined Yet!!
+                    </div>
+                </div>
+
+                <table class="table" th:if="${!products.isEmpty()}">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="product : ${products}">
+                        <td th:text="${product.id}"></td>
+                        <td th:text="${product.name}"></td>
+                        <td th:text="${product.category.name}"></td>
+                        <td th:text="${product.price}"></td>
+                        <td th:text="${product.quantity}"></td>
+                        <td>
+                            <div class="row">
+                                <form action="#" th:action="@{/products/update}">
+                                    <button type="submit" name="id" th:value="${product.id}"
+                                            class="btn btn-outline-success mr-2">update
+                                    </button>
+                                </form>
+                                <form action="#" th:action="@{/products/delete/} + ${product.id}" method="post">
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function clearFilter() {
+        window.location("/")
+    }
+</script>
+
+</body>
+</html>

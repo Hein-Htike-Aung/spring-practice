@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="module01-jwt-authentication" />
+        <module name="module04-oauth-fb-authentication" />
+        <module name="module-2-oauth-github-authentication" />
+        <module name="security-2" />
+        <module name="module03-oauth-github-authentication" />
+        <module name="module02-oauth-google-authentication" />
+        <module name="module01-authentication-with-otp" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mdoule04-oauth-facebook-authentication" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mdoule04-oauth-facebook-authentication" options="-parameters" />
+      <module name="module-2-oauth-github-authentication" options="-parameters" />
+      <module name="module01-authentication-with-otp" options="-parameters" />
+      <module name="module01-jwt-authentication" options="-parameters" />
+      <module name="module02-oauth-google-authentication" options="-parameters" />
+      <module name="module03-oauth-github-authentication" options="-parameters" />
+      <module name="module04-oauth-fb-authentication" options="-parameters" />
+    </option>
+  </component>
+</project>

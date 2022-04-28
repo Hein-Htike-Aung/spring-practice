@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layouts/layout :: layout(~{::main})}">
+
+<body>
+
+<main role="main">
+    <div class="py-5">
+        <div th:replace="~{fragments/products :: categories}"></div>
+    </div>
+</main>
+
+</body>
+</html>

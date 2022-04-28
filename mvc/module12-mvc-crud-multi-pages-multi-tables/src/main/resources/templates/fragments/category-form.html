@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<div th:fragment="categoryForm" class="container">
+    <div class="row mt-5">
+
+        <div class="col">
+            <form action="#" th:action="@{/category/save}" th:object="${category}" method="post">
+                <input type="text" hidden th:field="*{id}">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="row">
+                            <input type="text" class="form-control ml-3" th:field="*{name}">
+                            <span th:if="${#fields.hasErrors()}" th:errors="*{name}" class="text-danger"></span>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary ml-3">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col">
+            <form action="#" th:action="@{/index}" class="mr-auto">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" name="name">
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-outline-success ml-3" type="submit">Search</button>
+                        <button class="btn btn-outline-success ml-1" type="submit" onclick="clear()">Clear</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function clear() {
+        window.location = '/'
+    }
+</script>
+
+</body>
+</html>

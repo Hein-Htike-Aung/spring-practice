@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="module06-custmiz-in-memory-user-details-manager" />
+        <module name="module04-custom-login-logout" />
+        <module name="module09-method-security-authorize-annotation" />
+        <module name="module01-auth-using-jdbc-userdetails-manager" />
+        <module name="module14-user-creation" />
+        <module name="module07-url-authorization" />
+        <module name="module08-filter-chain" />
+        <module name="security" />
+        <module name="module02-http-form-login" />
+        <module name="module13-url-based-security" />
+        <module name="module03-user-details-service-auth-query" />
+        <module name="module05-in-memory-user-details-manager" />
+        <module name="module10-method-security-jsr-secured-annotation" />
+        <module name="module12-method-based-security" />
+        <module name="module11-custmiz-has-permission" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="module08-authority-authorization" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="module01-auth-using-jdbc-userdetails-manager" options="-parameters" />
+      <module name="module02-http-form-login" options="-parameters" />
+      <module name="module03-user-details-service-auth-query" options="-parameters" />
+      <module name="module04-custom-login-logout" options="-parameters" />
+      <module name="module05-in-memory-user-details-manager" options="-parameters" />
+      <module name="module06-custmiz-in-memory-user-details-manager" options="-parameters" />
+      <module name="module07-url-authorization" options="-parameters" />
+      <module name="module08-authority-authorization" options="-parameters" />
+      <module name="module08-filter-chain" options="-parameters" />
+      <module name="module09-method-security-authorize-annotation" options="-parameters" />
+      <module name="module10-method-security-jsr-secured-annotation" options="-parameters" />
+      <module name="module11-custmiz-has-permission" options="-parameters" />
+      <module name="module12-method-based-security" options="-parameters" />
+      <module name="module13-url-based-security" options="-parameters" />
+      <module name="module14-user-creation" options="-parameters" />
+    </option>
+  </component>
+</project>

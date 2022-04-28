@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="module08-prototype-scope" />
+        <module name="module10-global-property-source" />
+        <module name="module03-bean-lifecycle" />
+        <module name="module07-component-scan" />
+        <module name="module01-autowired" />
+        <module name="module12-value-annotation" />
+        <module name="module02-bean-naming" />
+        <module name="module09-lazy-eager" />
+        <module name="module13-boot-profile" />
+        <module name="module06-component-profile" />
+        <module name="module04-bean-profile" />
+        <module name="module05-property-source" />
+        <module name="module11-qualifier" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="module13-boot-profile" options="-parameters" />
+    </option>
+  </component>
+</project>

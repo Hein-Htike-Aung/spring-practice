@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<main role="main" th:fragment="main">
+
+    <div th:replace="~{fragments/employee-form :: employee-form}" class="mt-5"></div>
+    <div th:replace="~{fragments/employees :: employee-list}"></div>
+
+</main>
+
+</body>
+</html>

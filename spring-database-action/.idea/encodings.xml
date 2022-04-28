@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/module01-using-msql-with-jpa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module02-using-hsqldb-with-jdbc-template/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module03-one-to-one/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module04-one-to-many/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module05-many-to-many/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module06-table-inheritance/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module07-transaction/src/main/java" charset="UTF-8" />
+  </component>
+</project>

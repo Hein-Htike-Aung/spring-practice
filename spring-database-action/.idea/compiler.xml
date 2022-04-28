@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="module01-using-msql-with-jpa" />
+        <module name="module03-one-to-one" />
+        <module name="module04-one-to-many" />
+        <module name="module05-many-to-many" />
+        <module name="module07-transaction" />
+        <module name="module06-table-inheritance" />
+        <module name="spring-database-action-boot" />
+        <module name="module02-using-hsqldb-with-jdbc-template" />
+        <module name="spring-database-action" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="module01-using-msql-with-jpa" options="-parameters" />
+      <module name="module02-using-hsqldb-with-jdbc-template" options="-parameters" />
+      <module name="module03-one-to-one" options="-parameters" />
+      <module name="module04-one-to-many" options="-parameters" />
+      <module name="module05-many-to-many" options="-parameters" />
+      <module name="module06-table-inheritance" options="-parameters" />
+      <module name="module07-transaction" options="-parameters" />
+    </option>
+  </component>
+</project>

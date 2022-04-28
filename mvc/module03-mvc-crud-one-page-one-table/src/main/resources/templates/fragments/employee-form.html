@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<div th:fragment="employee-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form action="#" th:action="@{/save-employee}" th:object="${employee}" method="post">
+                    <div class="row">
+                        <input type="text" hidden th:field="*{id}">
+                        <label>Name</label>
+                        <input type="text" class="form-control" th:field="*{name}">
+                        <span th:if="${#fields.hasErrors()}" th:errors="*{name}" class="text-danger"></span>
+                    </div>
+                    <div class="row mt-3">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

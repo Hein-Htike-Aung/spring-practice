@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<div th:fragment="people">
+    <div class="container">
+        <div class="row mt-3">
+            <a th:href="@{/person/name}" class="btn btn-primary">Add Person</a>
+            <div class="col-md-12 mt-3">
+
+                <div th:if="${people.isEmpty()}">
+                    <div class="alert alert-warning" role="alert">
+                        No Person Defined Yet!!
+                    </div>
+                </div>
+
+                <table class="table" th:if="${!people.isEmpty()}">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Profession</th>
+                        <th>Country</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="person : ${people}">
+                        <td th:text="${person.id}"></td>
+                        <td th:text="${person.name}"></td>
+                        <td th:text="${person.profession}"></td>
+                        <td th:text="${person.country}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

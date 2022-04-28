@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/module01-request-mapping/pom.xml" />
+        <option value="$PROJECT_DIR$/module02-rest-controller-parameter/pom.xml" />
+        <option value="$PROJECT_DIR$/module01-rest-mapping/pom.xml" />
+        <option value="$PROJECT_DIR$/module03-response-entity/pom.xml" />
+        <option value="$PROJECT_DIR$/module04-json-xml/pom.xml" />
+        <option value="$PROJECT_DIR$/module05-build-in-rest/pom.xml" />
+        <option value="$PROJECT_DIR$/module06-hateoas-rest/pom.xml" />
+        <option value="$PROJECT_DIR$/module07-rest-with-microservice-backend/pom.xml" />
+        <option value="$PROJECT_DIR$/module07-rest-with-microservice-frontend/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

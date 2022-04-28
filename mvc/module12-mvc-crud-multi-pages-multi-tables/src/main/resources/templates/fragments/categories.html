@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<div class="container" th:fragment="categories">
+    <div class="row mt-5">
+        <div class="col-md-12">
+
+            <div th:if="${categories.isEmpty()}">
+                <div role="alert" class="alert alert-warning">
+                    No Category Defined Yet!!
+                </div>
+            </div>
+
+            <table class="table" th:if="${!categories.isEmpty()}">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="category : ${categories}">
+                    <td th:text="${category.id}"></td>
+                    <td th:text="${category.name}"></td>
+                    <td>
+                        <div class="row">
+                            <form action="#" th:action="@{/category/update}" method="post">
+                                <button type="submit" class="btn btn-success mr-3" name="id" th:value="${category.id}">Update</button>
+                            </form>
+                            <form action="#" th:action="@{/category/delete}" method="post">
+                                <button type="submit" class="btn btn-danger mr-3" name="id" th:value="${category.id}">Delete</button>
+                            </form>
+                            <form action="#" th:action="@{/category/details}">
+                                <button type="submit" class="btn btn-secondary" name="id" th:value="${category.id}">Details</button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

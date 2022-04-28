@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <form action="#" method="post" th:action="@{/article/save}" th:object="${article}">
+                <div class="row">
+                    <input type="text" hidden th:field="*{id}">
+                    <label>Article</label>
+                    <input type="text" class="form-control" th:field="*{name}">
+                    <span th:if="${#fields.hasErrors()}" th:errors="*{name}" class="text-danger"></span>
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+       <div class="col-md-12 p-0">
+           <div th:if="${articles.isEmpty()}">
+               <div class="alert alert-warning" role="alert">
+                   No Article Defined Yet!!!
+               </div>
+           </div>
+       </div>
+
+        <div class="col-md-4" th:if="${!articles.isEmpty}" th:each="article : ${articles}">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title" th:text="${article.name}"></div>
+                    <div class="row">
+                        <form action="#" th:action="@{article/update}" method="post">
+                            <button type="sumbit" class="btn btn-primary mr-3" name="id" th:value="${article.id}">Update</button>
+                        </form>
+                        <form action="#" th:action="@{article/delete/} + ${article.id}" method="post">
+                            <button type="sumbit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

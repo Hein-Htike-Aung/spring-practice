@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/module01-spring-form/pom.xml" />
+        <option value="$PROJECT_DIR$/module02-mvc-scopes/pom.xml" />
+        <option value="$PROJECT_DIR$/module03-mvc-crud-one-page-one-table/pom.xml" />
+        <option value="$PROJECT_DIR$/module04-session-flow/pom.xml" />
+        <option value="$PROJECT_DIR$/module05-cookie/pom.xml" />
+        <option value="$PROJECT_DIR$/module06-model-attribute-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/module07-request-attribute-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/module08-request-header-and-body/pom.xml" />
+        <option value="$PROJECT_DIR$/module09-controller-parameters/pom.xml" />
+        <option value="$PROJECT_DIR$/module10-session-attribute/pom.xml" />
+        <option value="$PROJECT_DIR$/module11-requestPart-photo-upload/pom.xml" />
+        <option value="$PROJECT_DIR$/module12-mvc-crud-multi-pages-multi-tables/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

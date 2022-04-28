@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/module01-custom-authentication-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/module02-http-form-login/pom.xml" />
+        <option value="$PROJECT_DIR$/module03-user-details-service-auth-query/pom.xml" />
+        <option value="$PROJECT_DIR$/module04-custom-login-logout/pom.xml" />
+        <option value="$PROJECT_DIR$/module05-in-memory-user-details-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/module06-custmiz-in-memory-user-details-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/module07-url-authorization/pom.xml" />
+        <option value="$PROJECT_DIR$/module08-filter-chain/pom.xml" />
+        <option value="$PROJECT_DIR$/module09-method-security-post-authorize-anno/pom.xml" />
+        <option value="$PROJECT_DIR$/module09-method-security-authorize-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/module10-method-security-jsr-secured-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/module11-custmiz-has-permission/pom.xml" />
+        <option value="$PROJECT_DIR$/module12-method-based-security/pom.xml" />
+        <option value="$PROJECT_DIR$/module13-url-based-security/pom.xml" />
+        <option value="$PROJECT_DIR$/module14-user-creation/pom.xml" />
+        <option value="$PROJECT_DIR$/module01-auth-using-jdbc-userdetails-manager/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

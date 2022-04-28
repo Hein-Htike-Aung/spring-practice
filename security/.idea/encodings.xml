@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/module01-auth-using-jdbc-userdetails-manager/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module01-auth-using-jdbc-userdetails-manager/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module02-http-form-login/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module03-user-details-service-auth-query/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module04-custom-login-logout/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module05-in-memory-user-details-manager/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module06-custmiz-in-memory-user-details-manager/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module07-url-authorization/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module08-filter-chain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module09-method-security-authorize-annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module10-method-security-jsr-secured-annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module11-custmiz-has-permission/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module12-method-based-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module13-url-based-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module14-user-creation/src/main/java" charset="UTF-8" />
+  </component>
+</project>

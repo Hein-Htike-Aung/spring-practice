@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+</head>
+
+<body>
+
+<main role="main" th:fragment="main">
+    <div th:replace="~{fragments/request-scope-page :: request-page}"></div>
+    <div th:replace="~{fragments/session-scope-page :: session-page}"></div>
+    <div th:replace="~{fragments/application-scope-page :: application-page}"></div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="module05-build-in-rest" />
+        <module name="rest" />
+        <module name="module01-rest-mapping" />
+        <module name="module04-json-xml" />
+        <module name="module06-hateoas-rest" />
+        <module name="module03-response-entity" />
+        <module name="module07-rest-with-microservice-backend" />
+        <module name="module07-rest-with-microservice-frontend" />
+        <module name="module02-rest-controller-parameter" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="module01-mapping" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="module01-mapping" options="-parameters" />
+      <module name="module01-rest-mapping" options="-parameters" />
+      <module name="module02-rest-controller-parameter" options="-parameters" />
+      <module name="module03-response-entity" options="-parameters" />
+      <module name="module04-json-xml" options="-parameters" />
+      <module name="module05-build-in-rest" options="-parameters" />
+      <module name="module06-hateoas-rest" options="-parameters" />
+      <module name="module07-rest-with-microservice-backend" options="-parameters" />
+      <module name="module07-rest-with-microservice-frontend" options="-parameters" />
+    </option>
+  </component>
+</project>

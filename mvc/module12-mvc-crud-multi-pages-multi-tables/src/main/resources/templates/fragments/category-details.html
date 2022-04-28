@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<div th:fragment="categoryDetials">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div th:object="${category}">
+                    <h3 th:text="${category.name}" class="mb-3"></h3>
+
+                    <div th:if="${category.productList.isEmpty()}">
+                        <div role="alert" class="alert alert-warning">
+                            No Product Defined Yet!!
+                        </div>
+                    </div>
+
+                    <table class="table" th:if="${!category.productList.isEmpty()}">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="product : ${category.productList}">
+                            <td th:text="${product.id}"></td>
+                            <td th:text="${product.name}"></td>
+                            <td th:text="${product.quantity}"></td>
+                            <td th:text="${product.price}"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <a href="#" th:href="@{/categories}" class="btn btn-outline-secondary">Back</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: web-ui-service
+  jpa:
+    defer-datasource-initialization: true
+
+server:
+  port: 0
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8083/eureka

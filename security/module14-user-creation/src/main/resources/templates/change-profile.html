@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="row d-flex justify-content-center mt-4">
+
+        <div class="col-md-4 py-4">
+            <h2>Registration Page</h2>
+
+
+            <form action="#" th:action="@{/user/change}" th:object="${passwordChanger}" method="post">
+
+                <div class="form-group">
+                    <h3 sec:authentication="name"/>
+                </div>
+
+                <div class="form-group">
+                    <label>Old Password</label>
+                    <input type="password" class="form-control" th:field="*{oldPassword}" required
+                           th:classappend="${#fields.hasErrors('oldPassword')} ? 'is-invalid'">
+                    <span th:errors="*{oldPassword}" class="invalid-feedback"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>New Password</label>
+                    <input type="password" class="form-control" th:field="*{password}" required
+                           th:classappend="${#fields.hasErrors('password')} ? 'is-invalid'">
+                    <span th:errors="*{password}" class="invalid-feedback"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Repeated Password</label>
+                    <input type="password" class="form-control" th:field="*{repeatedPassword}" required
+                           th:classappend="${#fields.hasErrors('repeatedPassword')} ? 'is-invalid'">
+                    <span th:errors="*{repeatedPassword}" class="invalid-feedback"></span>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-block btn-primary">Change Password</button>
+                    <a href="#" th:href="@{/index}" class="btn btn-lg btn-block btn-outline-primary">Back</a>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

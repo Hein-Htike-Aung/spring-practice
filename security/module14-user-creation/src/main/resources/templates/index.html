@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+    <div class="row d-flex justify-content-start">
+        <div class="col-md-4 py-4">
+            <div class="card card-body">
+                <h5>
+                    Name: <span sec:authentication="name"></span>
+                </h5>
+                <h5 sec:authorize="isAuthenticated()">
+                    Authenticated: true
+                </h5>
+                <h6 th:each="authority : ${#authentication.authorities}">
+                    Authorities: <span th:text="${authority}"></span>
+                </h6>
+                <div th:object="${principle}">
+                    <h6>
+                        Username: <span th:text="*{username}"></span>
+                    </h6>
+                    <h6>
+                        accountNonExpired: <span th:text="*{accountNonExpired}"></span>
+                    </h6>
+                    <h6>
+                        accountNonLocked: <span th:text="*{accountNonLocked}"></span>
+                    </h6>
+                    <h6>
+                        isCredentialsNonExpired: <span th:text="*{isCredentialsNonExpired}"></span>
+                    </h6>
+                    <h6>
+                        isEnabled: <span th:text="*{isEnabled}"></span>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <a th:href="@{/user/change}" class="btn btn-primary">Change Password</a>
+    </div>
+    <div class="row mt-3">
+        <div sec:authorize="isAuthenticated()">
+            <a href="javascript:document.logoutForm.submit()" class="btn btn-outline-success">Logout</a>
+            <form action="#" name="logoutForm" method="post" th:action="@{/logout}" th:hidden="true"></form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

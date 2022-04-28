@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+    <div class="row py-5">
+        <div class="col-md-6">
+            <form action="#" th:action="@{/save-employee}" th:object="${employee}" method="post">
+
+                <div class="row">
+                    <label>Name</label>
+                    <input type="text" class="form-control" th:field="*{name}">
+                    <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="text-danger"></span>
+                </div>
+
+                <div class="row">
+                    <label>Hire Date</label>
+                    <input type="date" class="form-control" th:field="*{hireDate}">
+                    <span th:if="${#fields.hasErrors()}" th:errors="*{hireDate}" class="text-danger"></span>
+                </div>
+
+                <div class="row">
+                    <label>Salary</label>
+                    <input type="number" class="form-control" th:field="*{salary}">
+                    <span th:if="${#fields.hasErrors()}" th:errors="*{salary}" class="text-danger"></span>
+                </div>
+
+                <div class="row">
+                    <button type="submit" class="btn btn-primary mt-4">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 py-5">
+            <div th:if="${employees==null || employees.isEmpty()}">
+                <div class="alert alert-warning" role="alert">
+                    No Employee Defined Yet!!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 py-5" th:if="${employees!=null && !employees.isEmpty()}" th:each="employee : ${employees}">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-header" th:text="${employee.name}"></h5>
+                    <p class="card-text" th:text="${employee.hireDate}"></p>
+                    <p class="card-text" th:text="${employee.salary}"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

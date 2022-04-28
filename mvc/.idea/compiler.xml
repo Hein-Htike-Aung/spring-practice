@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="module11-requestPart-photo-upload" />
+        <module name="spring-mvc" />
+        <module name="module12-mvc-crud-multi-pages-multi-tables" />
+        <module name="module02-mvc-scopes" />
+        <module name="module04-session-flow" />
+        <module name="module09-controller-parameters" />
+        <module name="module06-model-attribute-annotation" />
+        <module name="module08-request-header-and-body" />
+        <module name="module05-cookie" />
+        <module name="module01-spring-form" />
+        <module name="module03-mvc-crud-one-page-one-table" />
+        <module name="mvc" />
+        <module name="module07-request-attribute-annotation" />
+        <module name="module10-session-attribute" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="module01-spring-form" options="-parameters" />
+      <module name="module02-mvc-scopes" options="-parameters" />
+      <module name="module03-mvc-crud-one-page-one-table" options="-parameters" />
+      <module name="module04-session-flow" options="-parameters" />
+      <module name="module05-cookie" options="-parameters" />
+      <module name="module06-model-attribute-annotation" options="-parameters" />
+      <module name="module07-request-attribute-annotation" options="-parameters" />
+      <module name="module08-request-header-and-body" options="-parameters" />
+      <module name="module09-controller-parameters" options="-parameters" />
+      <module name="module10-session-attribute" options="-parameters" />
+      <module name="module11-requestPart-photo-upload" options="-parameters" />
+      <module name="module12-mvc-crud-multi-pages-multi-tables" options="-parameters" />
+    </option>
+  </component>
+</project>
